@@ -1,10 +1,10 @@
 ﻿using System.Data.Entity;
-using DexCMS.Core.Infrastructure.Contexts;
 using DexCMS.Portfolios.Models;
+using DexCMS.Base.Contexts;
 
 namespace DexCMS.Portfolios.Contexts
 {
-    public interface IDexCMSPortfoliosContext: IDexCMSContext
+    public interface IDexCMSPortfoliosContext: IDexCMSBaseContext
     {
         DbSet<PortfolioCategory> PortfolioCategories { get; set; }
         DbSet<Portfolio> Portfolios { get; set; }

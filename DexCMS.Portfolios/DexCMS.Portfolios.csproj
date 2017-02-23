@@ -34,9 +34,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\node_modules\dexcms-base\dist\DexCMS.Base.dll</HintPath>
     </Reference>
-    <Reference Include="DexCMS.Core.Infrastructure, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\node_modules\dexcms-core\dist\DexCMS.Core.Infrastructure.dll</HintPath>
+    <Reference Include="DexCMS.Core">
+      <HintPath>..\..\DexCMS.ExampleSite\DexCMS.ExampleSite\node_modules\dexcms-core\dist\DexCMS.Core.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
@@ -62,10 +61,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\IDexCMSPortfoliosContext.cs" />
+    <Compile Include="Globals\DexPortfoliosRegister.cs" />
+    <Compile Include="Initializers\Helpers\PortfolioCategoryReference.cs" />
+    <Compile Include="Initializers\Helpers\PortfolioSkillReference.cs" />
+    <Compile Include="Initializers\Helpers\PortfolioStatusReference.cs" />
+    <Compile Include="Initializers\PortfolioCategoryInitializer.cs" />
+    <Compile Include="Initializers\PortfolioInitializer.cs" />
+    <Compile Include="Initializers\PortfoliosInitializer.cs" />
+    <Compile Include="Initializers\PortfolioSkillInitializer.cs" />
+    <Compile Include="Initializers\PortfolioStatusInitializer.cs" />
     <Compile Include="Repositories\PortfolioCategoryRepository.cs" />
     <Compile Include="Repositories\PortfolioRepository.cs" />
     <Compile Include="Repositories\PortfolioSkillRepository.cs" />
-    <Compile Include="Repositories\PortfolioStatuRepository.cs" />
+    <Compile Include="Repositories\PortfolioStatusRepository.cs" />
     <Compile Include="Interfaces\IPortfolioCategoryRepository.cs" />
     <Compile Include="Interfaces\IPortfolioRepository.cs" />
     <Compile Include="Interfaces\IPortfolioSkillRepository.cs" />

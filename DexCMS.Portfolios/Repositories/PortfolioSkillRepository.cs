@@ -1,8 +1,8 @@
-﻿using DexCMS.Core.Infrastructure.Repositories;
+﻿using DexCMS.Core.Repositories;
 using DexCMS.Portfolios.Models;
 using DexCMS.Portfolios.Interfaces;
 using DexCMS.Portfolios.Contexts;
-using DexCMS.Core.Infrastructure.Contexts;
+using DexCMS.Core.Contexts;
 namespace DexCMS.Portfolios.Repositories
 {
     public class PortfolioSkillRepository : AbstractRepository<PortfolioSkill>, IPortfolioSkillRepository

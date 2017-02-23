@@ -1,11 +1,11 @@
-﻿using DexCMS.Core.Infrastructure.Repositories;
+﻿using DexCMS.Core.Repositories;
 using DexCMS.Portfolios.Models;
 using DexCMS.Portfolios.Interfaces;
 using DexCMS.Portfolios.Contexts;
-using DexCMS.Core.Infrastructure.Contexts;
+using DexCMS.Core.Contexts;
 namespace DexCMS.Portfolios.Repositories
 {
-    public class PortfolioStatuRepository : AbstractRepository<PortfolioStatus>, IPortfolioStatusRepository
+    public class PortfolioStatusRepository : AbstractRepository<PortfolioStatus>, IPortfolioStatusRepository
     {
         public override IDexCMSContext GetContext()
         {
@@ -14,7 +14,7 @@ namespace DexCMS.Portfolios.Repositories
 
         private IDexCMSPortfoliosContext _ctx { get; set; }
 
-        public PortfolioStatuRepository(IDexCMSPortfoliosContext ctx)
+        public PortfolioStatusRepository(IDexCMSPortfoliosContext ctx)
         {
             _ctx = ctx;
         }

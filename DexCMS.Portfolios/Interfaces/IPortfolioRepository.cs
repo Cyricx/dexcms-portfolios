@@ -1,5 +1,5 @@
 ﻿using DexCMS.Portfolios.Models;
-using DexCMS.Core.Infrastructure.Interfaces;
+using DexCMS.Core.Interfaces;
 
 namespace DexCMS.Portfolios.Interfaces
 {
